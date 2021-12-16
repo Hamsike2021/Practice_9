@@ -3,7 +3,7 @@ import time, random
 
 def line_res(lenn, num):
     st_time = time.time()
-    s = [random.randint(0, 2000) for i in range(lenn)]
+    s = sorted([random.randint(0, 2000) for i in range(lenn)])
     x = True
     for i in range(lenn):
         if s[i] == num:
